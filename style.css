@@ -1,0 +1,48 @@
+.container{
+
+}
+
+.Me {
+    border-radius: 50%;
+  }
+
+ .center{
+     display: block;
+     margin-left:auto;
+     margin-right: auto;
+     width: 40%; 
+ }
+ .title{
+    background: #f9e1e0;
+    border-radius: 25px;
+    width:90%;
+    height:130%;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .pictureLink{
+    display:flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .gifLink
+ {
+     justify-content: center;
+     align-items: center;
+ }
+ .topnav{
+     background-color: #7A526C;
+     overflow: hidden;
+ }
+ .topnav a {
+    float: left;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+ }
+ .topnav a:hover {
+     background-color: #f9e1e0;
+     color: #7A526C;
+ }
