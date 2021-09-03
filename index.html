@@ -1,29 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!--This is my landing page! You can click on my face or the button to be taken to the Portfolio.-->
-        <!--Eventually I would like to add a favicon of my logo (something I created years ago for a webcomic I made)-->
-        <!--I would like to make a better background to go behind my name I just ran out of time-->
-       
-        <!--This is for our CSS files, metadata, and JS files -->
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Dayna Fairchild</title>
-        <link rel="stylesheet" href="./style.css"/>
-        
 
-    </head>
-    <body style="padding-top: 10px; padding-left: 10%; padding-bottom: 10%; padding-right: 30px; background-color:white">
-         
-       <img class="title" style="position:absolute" src="./images/Dayna Fairchild Pastel Zelda Font-1.png.png" width="700" height="700"/>
-        
-       <a class="pictureLink" style="position:absolute" href="portfolio.html"><img class="Me" src="./images/Dayna.jpg" width="250" height="250"/></a>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dayna Fairchild</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- <script type="text/javascript" src="/functions.js"></script> -->
+</head>
 
-       
-    </body>
-    <main > </main>
-    
-    <footer class="gifLink" style="position:relative; left:40%; top:-100%">
-        <a href="portfolio.html"><img src="./images/Portfolio button (2).gif" /></a>
-      </footer>
+<body>
+    <header class="pageHeader" id="pageHeader" style="color:#436B91">
+        <a id="top"></a>
+        <img id ="titleImage"src="/images/DaynaFairchildZeldaFont.png"/>
+
+<nav class="topnav" style="text-indent: 20px;">
+    <a href="#sectionOne">About</a>
+    <a href="#sectionTwo">Coding</a>
+    <a href="#sectionThree">Art</a>
+</nav>
+    </header>
+    <section class= "sectionOne" id="sectionOne">
+        <div class="sectionColumn">
+            <p><img class="Me" src="./images/Dayna.jpg" width="150" height="150" />
+            <h3>Contact me through: </h3>
+            <a href="mailto:dmdoodlz@gmail.com">dmdoodlz@gmail.com</a>
+            <br>
+            <br>
+            <a href="https://github.com/DaynaFairchild">  <img src="./images/github_PNG20.png" width="50"
+                    height="50" /></a>
+            <a href="https://app.joinhandshake.com/users/32020925"><img src="./images/handshake.png" width="50"
+                    height="50" /></a>
+            <a href="https://www.linkedin.com/in/dayna-fairchild-b54671163/"><img src="./images/linkedIn.png" width="50"
+                    height="50" /></a></p>
+                    <!--add target="_blank" to the links-->
+        </div>
+        <div class="sectionColumn">
+            <p>
+            <h2 style="color:#436B91;">About</h2>
+            <p id="about">At my core I'm a lifelong scholar. Languages are one of my greatest passions. Not only coding but also first and second language acquisition like with English or Spanish.</p>
+            
+                <h2>Skills</h2>
+                <ul style="color:#436B91" id="skillsList">
+                    <li>C#</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+            
+        </div>
+        <div class="sectionColumn">
+          
+            <h2 class="Education" style="color:#436B91"><b>Education: </b></h2>
+            <p>
+                <a  href="https://www.miamioh.edu/"> <img id ="M" src="/images/M.png"/></a>
+                <br>
+                    <white-space:pre>Miami University, Oxford, OH</white-space:pre>
+            </p>
+            <p>
+                    <white-space:pre> B.A., Linguistics </white-space:pre>
+            </p>
+            <p>
+                    <white-space:pre>Asian American Studies</white-space:pre>
+            </p>
+            <p>
+                <p><a href="https://wecancodeit.org/"><img id="weCanCodeIt" src="/images/weCanCodeIt.png"/></a>
+                <br>
+                We Can Code It</p>
+                <p>Certificate of Software Development</p>
+            </p>
+            </p>
+
+        </div>
+    </section>
+    <section class = "sectionTwo" id="sectionTwo">
+        <div>
+            <h1 class="worksTitle">Works</h1>
+            <div class="sectionTwoRow">
+                <h1>Chip'n</h1>
+                <p class="sectionTwoText">This is a casino website that was a group project. We used C#, SQL, HTML and JavaScript. We made an age restriction, password incription and synchronized the chip count to the database so it is tracked between all the games. All the art was created by me.</p>
+                <div id="buttonsWorks">
+                    <button id="nextWorks">Next</button>
+                    <button id="prevWorks">Prev</button>
+                </div>
+                <div class="view-portWorks">
+                    
+                        <div class ="images-containerWorks">
+                            <div class="cardWorks"><img class="imagesWorks" src="images/ChipinHomeLogIn.PNG" height="500px" /></div>
+                            <div class="cardWorks"><img class="imagesWorks" src="images/ChipinBlackjack.PNG" height="500px" /></div>
+                            <div class="cardWorks"><img class="imagesWorks" src="images/ChipinCraps.PNG" height="500px" /></div>
+                            <div class="cardWorks"><img class="imagesWorks" src="images/ChipinSlots.PNG" height="500px" /></div>
+                            <!-- <div class="cardWorks"><img class="imagesWorks" src="images/ChipinHomeLogIn.PNG" height="500px" /></div>  -->
+                        </div>
+                        
+                </div>
+
+            </div>
+            <hr>
+            <div class="sectionTwoRow">
+                <h1>Donut Clicker</h1>
+                <p class="sectionTwoText">For this solo project I made a simple clicker game inspired by <a href="https://orteil.dashnet.org/cookieclicker/">Cookie Clicker</a>. I created all the art on this site.  I added a hidden animation that makes donuts rain down and a spoil function that triggers modal pop-up warning. To create this I used JavaScript, CSS and HTML.</p>
+
+                    <div id="buttonsWorksTwo">
+                        <button id="nextWorksTwo">Next</button>
+                        <button id="prevWorksTwo">Prev</button>
+                    </div>
+                    <div class="view-portWorksTwo">
+                        
+                            <div class ="images-containerWorksTwo">
+                                <div class="cardWorksTwo"><img class="imagesWorks" src="images/DonutClickerTitle.PNG" height="500px" /></div>
+                                <div class="cardWorksTwo"><img class="imagesWorks" src="images/DonutClickerRain.PNG" height="500px" /></div>
+                                <div class="cardWorksTwo"><img class="imagesWorks" src="images/DonutClicker1.PNG" height="500px" /></div>
+                                <div class="cardWorksTwo"><img class="imagesWorks" src="images/DonutClickerSpoil.PNG" height="500px" /></div>
+                            </div>
+                            
+                    </div>
+
+            </div>
+           <hr>
+            <div class="sectionTwoRow">
+                <h1>Studio Ghibli Fan Page</h1>
+
+                <p class="sectionTwoText">For this solo project I used a free <a href="https://ghibliapi.herokuapp.com/">Studio Ghibli API to populate the page.</a>. I made each movie in the list of movies clickable to take the user to a more detailed page. The API did not have any images so I added a few visuals of my own to liven it up a bit.</p>
+
+                    <div id="buttonsWorksThree">
+                        <button id="nextWorksThree">Next</button>
+                        <button id="prevWorksThree">Prev</button>
+                    </div>
+                    <div class="view-portWorksThree">
+                        
+                            <div class ="images-containerWorksThree">
+                                <div class="cardWorksThree"><img class="imagesWorksThree" src="images/StudioGhibliMovies.PNG" height="400px" /></div>
+                                <div class="cardWorksThree"><img class="imagesWorksThree" src="images/StudioGhibliMovie.PNG" height="400px" /></div>
+                                <div class="cardWorksThree"><img class="imagesWorksThree" src="images/StudioGhibliCharacters.PNG" height="400px" /></div>
+                                <div class="cardWorksThree"><img class="imagesWorksThree" src="images/StudioGhibliLocations.PNG" height="400px" /></div>
+                            </div>
+                            
+                    </div>
+
+            </div>
+            
+        </div> 
+    </section>
+
+    <section class="sectionThree" id="sectionThree">
+        <div id="artSection">
+            <h1 class="artTitle">Art</h1>
+            <p>Here are samples of some of logos that I have created along with the face cards from the deck of cards I created for the Chip'n casino project I worked on. They are based off of my fellow group members and our intructors.</p>
+        </div>
+        
+        
+        <div id="buttons">
+            <button id="next">Next</button>
+            <button id="prev">Prev</button>
+        </div>
+        <div class="view-port">
+            
+                <div class ="images-container">
+                    <div class="card"><img class="images" src="images/logo1.JPG" height="400px" /></div>
+                    <div class="card"><img class="images" src="images/logo2.png" height="400px" /></div>
+                    <div class="card"><img class="images" src="images/logo3.JPG" height="400px" /></div>
+                    <div class="card"><img class="images" src="images/faceCards1.png" height="400px" /></div>
+                    <div class="card"><img class="images" src="images/faceCards2.png" height="400px" /></div>
+                    <div class="card"><img class="images" src="images/logo1.JPG" height="400px" /></div>
+                </div>
+                
+        </div>
+            
+                
+    </section>
+
+    <footer>
+        <p style="text-align:center"><a href="#top">Back to the top</a></p>
+    </footer>
+  
+    <script type="text/javascript" src="/functions.js"></script>
+
+</body>
+
+
 </html>
